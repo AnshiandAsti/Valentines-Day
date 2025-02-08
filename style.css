@@ -24,24 +24,39 @@ body {
   
   .yes-button {
     font-size: 1.5em;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin-right: 10px;
-    background-color: #4caf50;
-    color: white;
+    background-color: #a8e6cf; /* Pastel green */
+    color: #2e7d32; /* Darker green for contrast */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-  }
-  
-  .no-button {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.yes-button:hover {
+    background-color: #81c784; /* Slightly deeper green on hover */
+    transform: scale(1.05);
+}
+
+.no-button {
     font-size: 1.5em;
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
+    padding: 12px 24px;
+    background-color: #ff8a80; /* Pastel red */
+    color: #c62828; /* Darker red for contrast */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-  }
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.no-button:hover {
+    background-color: #e57373; /* Slightly deeper red on hover */
+    transform: scale(1.05);
+}
+
   
   .gif_container img {
     max-width: 100%;
